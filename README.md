@@ -1,6 +1,6 @@
 # SPM lcov action
 
-Swift Package Manager Code Coverage Report.
+Swift Package Manager Code Coverage Report, forked off of maxep to add `-show-functions` to llvm-cov.
 
 ## Summary Report
 
@@ -36,7 +36,7 @@ Use the specified output format. The supported formats are: “text” (JSON), �
       run: swift test --enable-code-coverage
 
 - name: Test coverage
-  uses: maxep/spm-lcov-action@0.3.0
+  uses: hashmapsdata2value/spm-lcov-action@0.1.0
   with:
       output-file: ./coverage/lcov.info
 ```
