@@ -1,6 +1,6 @@
-name: 'Swift Coverage Report'
+name: 'Swift Coverage Report w/ -show-functions'
 description: 'Report SPM test coverage summary and lcov file'
-author: 'Maxime Epain'
+author: 'HashMapsData2Value'
 branding:
     icon: 'check-circle'  
     color: 'orange'
