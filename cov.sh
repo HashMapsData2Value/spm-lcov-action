@@ -39,7 +39,7 @@ llvm-cov report \
     -instr-profile=$INSTR_PROFILE \
     -ignore-filename-regex=$IGNORE_FILENAME_REGEX \
     -use-color \
-    -show-functions *.swift
+    -show-functions Sources
 
 llvm-cov export \
     "${COV_BIN}" \
