@@ -32,12 +32,14 @@ fi
 
 mkdir -p "$(dirname "$OUTPUT_FILE")"
 
+ls -alh
+
 llvm-cov report \
     "${COV_BIN}" \
     -instr-profile=$INSTR_PROFILE \
     -ignore-filename-regex=$IGNORE_FILENAME_REGEX \
     -use-color \
-    -show-functions
+    -show-functions *.swift
 
 llvm-cov export \
     "${COV_BIN}" \
